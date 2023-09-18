@@ -1,0 +1,28 @@
+﻿<Window x:Class="TimeManagementApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeManagementApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="WELCOME TO SELF-STUDY!" HorizontalAlignment="Left" Margin="257,58,0,0" VerticalAlignment="Top" Width="239" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Please select an option:" HorizontalAlignment="Left" Margin="118,103,0,0" VerticalAlignment="Top" Width="316" FontSize="14"/>
+        <ListBox x:Name="ListBox" SelectionMode="Single" SelectionChanged="ListBox_SelectionChanged" Margin="118,132,164,228">
+            <ListBoxItem x:Name="listBox_add" Content="Add Module" />
+            <ListBoxItem x:Name="listBox_self_study" Content="Self-Study" />
+            <ListBoxItem x:Name="listBox_report" Content="Report"/>
+        </ListBox>
+
+        <Button Content="CONTINUE" HorizontalAlignment="Left" Margin="236,232,0,0" VerticalAlignment="Top" Height="30" Width="117" Click="Button_Click_1"/>
+        <Button Content="CANCEL" HorizontalAlignment="Left" Margin="377,232,0,0" VerticalAlignment="Top" Height="30" Width="119" Click="Button_Click"/>
+
+    </Grid>
+</Window>
